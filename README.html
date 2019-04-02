@@ -1,0 +1,46 @@
+<h1>SVKBD</h1>
+
+<p>This is a simple virtual keyboard, intended to be used in environments,
+where no keyboard is available.</p>
+
+<h2>Installation</h2>
+
+<pre><code>% make
+% make install
+</code></pre>
+
+<p>This will create by default <code>svkbd-en</code>, which is svkbd using an English
+keyboard layout. You can create svkbd for additional layouts by doing:</p>
+
+<pre><code>% make svkbd-$layout
+</code></pre>
+
+<p>This will take the file <code>layout.$layout.h</code> and create <code>svkbd-$layout</code>.
+<code>make install</code> will then pick up the new file and install it accordingly.</p>
+
+<h2>Usage</h2>
+
+<pre><code>% svkbd-en
+</code></pre>
+
+<p>This will open svkbd at the bottom of the screen, showing the default
+English layout.</p>
+
+<pre><code>% svkbd-en -d
+</code></pre>
+
+<p>This tells svkbd-en to announce itself being a dock window, which then
+is managed differently between different window managers. If using dwm
+and the dock patch, then this will make svkbd being managed by dwm and
+some space of the screen being reserved for it.</p>
+
+<pre><code>% svkbd-en -g 400x200+1+1
+</code></pre>
+
+<p>This will start svkbd-en with a size of 400x200 and at the upper left
+window corner.</p>
+
+<h2>Repository</h2>
+
+<pre><code>git clone http://git.suckless.org/svkbd
+</code></pre>
