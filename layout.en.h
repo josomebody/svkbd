@@ -1,4 +1,5 @@
 static Key keys[] = {
+	{ "esc", XK_Escape, 1 },
 	{ "1!", XK_1, 1 },
 	{ "2@", XK_2, 1 },
 	{ "3#", XK_3, 1 },
@@ -26,7 +27,7 @@ static Key keys[] = {
 	{ 0, XK_p, 1 },
 	{ "[", XK_bracketleft, 1 },
 	{ "]", XK_bracketright, 1 },
-	{ "Return", XK_Return, 3 },
+	{ "\\|", XK_backslash, 1 },
 	{ 0 }, /* New row */
 	{ 0, XK_Caps_Lock, 2 },
 	{ 0, XK_a, 1 },
@@ -40,7 +41,7 @@ static Key keys[] = {
 	{ 0, XK_l, 1 },
 	{ ":;", XK_semicolon, 1 },
 	{ "'\"", XK_exclam, 1 },
-	{ "\\|", XK_backslash, 1 },
+	{ "Return", XK_Return, 3 },
 	{ 0 }, /* New row */
 	{ 0, XK_Shift_L, 3 },
 	{ 0, XK_z, 1 },
@@ -61,10 +62,12 @@ static Key keys[] = {
 	{ "", XK_space, 5 },
 	{ "Alt", XK_Alt_R, 1 },
 	{ "Ctrl", XK_Control_R, 1 },
+	{ "PgUp", XK_Prior, 1 },
 	{ "<", XK_Left, 1 },
 	{ "v", XK_Down, 1 },
 	{ "^", XK_Up, 1 },
 	{ ">", XK_Right, 1},
+	{ "PgDn", XK_Next, 1 },
 	{ "[X]", XK_Cancel, 1},
 };
 
