@@ -40,7 +40,7 @@ static Key keys[] = {
 	{ 0, XK_k, 1 },
 	{ 0, XK_l, 1 },
 	{ ":;", XK_semicolon, 1 },
-	{ "'\"", XK_exclam, 1 },
+	{ "'\"", XK_apostrophe, 1 },
 	{ "Return", XK_Return, 3 },
 	{ 0 }, /* New row */
 	{ 0, XK_Shift_L, 3 },
